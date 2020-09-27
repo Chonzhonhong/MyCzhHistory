@@ -1,0 +1,2 @@
+include ':app', ':afbaselibrary'
+rootProject.name='My CzhHistory'
