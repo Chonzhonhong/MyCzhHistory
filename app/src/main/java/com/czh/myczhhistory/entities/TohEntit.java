@@ -16,6 +16,8 @@ public class TohEntit {
      * 			"day":1,
      * 			"des":"在206年前的今天，1814年10月1日 (农历八月十八)，反法联盟各参加国在奥地利首都维也纳召开会议。",
      * 			"lunar":"甲戌年八月十八"
+     * 	    "_id":"13920928",
+     *
      * */
     public String _id;
     public String title;
@@ -25,6 +27,7 @@ public class TohEntit {
     public String day;
     public String des;
     public String lunar;
+    public String content;
 
     @Override
     public String toString() {

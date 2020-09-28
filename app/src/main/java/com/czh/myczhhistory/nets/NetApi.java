@@ -25,15 +25,17 @@ public interface NetApi {
 
     String baseUrl = AppUtils.isAppDebug() ? domainDebugName : domainReleaseName;
 
+    String HISTURLKEY = "d5b787db05b23a1c8ae4f83a813cba97";
+
     @POST("/japi/toh")
     @FormUrlEncoded
     Observable<List<TohEntit>> getToh(@Field("key") String key, @Field("v") String v,
                                      @Field("month") String month, @Field("day") String day);
 
     /*2.0忘记密码*/
-    @POST("userSecurity/resetPassword")
+    @POST("/japi/tohdet")
     @FormUrlEncoded
-    Observable<String> getResetPassword (@Field("phone") String phone,@Field("verifyCode") String verifyCode,@Field("newPassword") String newPassword );
+    Observable<List<TohEntit>> getResetPassword (@Field("key") String key,@Field("v") String v,@Field("id") String id );
 
 
 

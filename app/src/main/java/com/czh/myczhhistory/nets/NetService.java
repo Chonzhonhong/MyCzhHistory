@@ -46,4 +46,11 @@ public class NetService {
     public Observable<List<TohEntit>> getToh(String key, String v, String month, String day){
         return addSchedulers(getApi().getToh(key, v, month, day));
     }
+
+
+    public Observable<List<TohEntit>> getResetPassword( String v, String id){
+        return addSchedulers(getApi().getResetPassword( NetApi.HISTURLKEY,v, id));
+    }
+
+
 }
