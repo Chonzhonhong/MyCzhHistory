@@ -56,11 +56,11 @@ public class MainActivity extends BaseActivity implements TabStripView.OnTabSele
 
     private void initTab(Bundle savedInstanceState) {
         //设置tab栏
-        tabBar.addTab(HomeFragment.class, new TabStripView.TabParam(R.color.colorPrimary
+        tabBar.addTab(HomeFragment.class, new TabStripView.TabParam(R.color.home
                 , R.mipmap.home, R.mipmap.home1, "首页"));
-        tabBar.addTab(CommunityFragment.class, new TabStripView.TabParam(R.color.colorPrimary
+        tabBar.addTab(CommunityFragment.class, new TabStripView.TabParam(R.color.home
                 , R.mipmap.community, R.mipmap.community1, "社区"));
-        tabBar.addTab(PersonalFragment.class, new TabStripView.TabParam(R.color.colorPrimary
+        tabBar.addTab(PersonalFragment.class, new TabStripView.TabParam(R.color.home
                 , R.mipmap.personal, R.mipmap.personal1, "个人"));
         tabBar.onRestoreInstanceState(savedInstanceState);
         tabBar.setTabSelectListener(this);
